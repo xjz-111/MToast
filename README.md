@@ -19,7 +19,7 @@
   
   dependencies {
     // 替换成最新版本
-    implementation 'com.github.xjz-111:mToasr:*.*.*'
+    implementation 'com.github.xjz-111:MToast:*.*.*'
     ...
   }
 ```
