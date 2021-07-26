@@ -34,7 +34,7 @@
                 .typeface(Typeface.DEFAULT)
                 .duration(MToast.LENGTH_SHORT)
                 .gravity(Gravity.CENTER, 0, 0)
-                .paddingTop(15)
+                .paddingLeft(15)
                 .paddingRight(15);
   
   // 简单显示
