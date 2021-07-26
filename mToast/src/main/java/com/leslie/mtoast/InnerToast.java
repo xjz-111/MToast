@@ -103,6 +103,9 @@ class InnerToast {
                            Drawable iconDrawable,
                            @MToast.ToastDuration int duration,
                            Config config) {
+        if (null == context){
+            throw new AssertionError("请先调用MToast.configGlobal()做配置初始化工作！！！");
+        }
         Toast toast = Toast.makeText(context, msg, LENGTH_SHORT);
         if (null == customView && null != config) {
             // 使用全局样式

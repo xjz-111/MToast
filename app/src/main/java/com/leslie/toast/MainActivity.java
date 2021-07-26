@@ -26,7 +26,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn5).setOnClickListener(this);
         findViewById(R.id.btn6).setOnClickListener(this);
 
-        MToast.configGlobal(getApplicationContext()).iconResId(R.mipmap.a).textSize(16);
+        MToast.configGlobal(getApplicationContext())
+                .iconResId(R.mipmap.a)
+                .textSize(16)
+                .typeface(Typeface.DEFAULT)
+                .duration(MToast.LENGTH_SHORT)
+                .gravity(Gravity.CENTER, 0, 0)
+                .paddingLeft(15)
+                .paddingRight(15);
 
 
 
